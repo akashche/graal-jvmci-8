@@ -185,6 +185,7 @@ echo BUILDARCH=%BUILDARCH%                 >>    %HotSpotBuildSpace%\%%i\local.m
 echo Platform_arch=%Platform_arch%         >>    %HotSpotBuildSpace%\%%i\local.make
 echo Platform_arch_model=%Platform_arch_model% >>    %HotSpotBuildSpace%\%%i\local.make
 echo MSC_VER=%MSC_VER% 			   >>    %HotSpotBuildSpace%\%%i\local.make
+echo USER_RELEASE_SUFFIX=jvmci-%JVMCI_VERSION% >>    %HotSpotBuildSpace%\%%i\local.make
 
 for /D %%j in (debug, fastdebug, product) do (
 if NOT EXIST %HotSpotBuildSpace%\%%i\%%j mkdir %HotSpotBuildSpace%\%%i\%%j
